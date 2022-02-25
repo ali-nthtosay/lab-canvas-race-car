@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>Race Car</title>
-  </head>
-  <body>
-    <div class="game-intro">
-      <img src="./images/logo.png" alt="" class="logo-img" />
-      <br />
-      <button id="start-button">StartGame</button>
-      <p>Use the left and right arrow to control the car!</p>
-      <img src="./images/arrows.png" alt="" class="arrows-img" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>  <!--
+<style>
+.container {
+    background-color: yellowgreen;
+    background-size: cover;
+}
+.road{
+    width: 400px;
+    height: 100vh;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    border-left: 7px dashed white;
+    border-right: 7px dashed white;
+}
+.car{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    bottom: 120px;
+    background-image: url("car.png");
+    background-size: cover;
+}
+.line{
+    width: 10px ;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    margin-left: 195px;
+}
+</style>  -->
+<body>
+    <div class="container">
+        <div><img src="logo.png" alt="" class="img-logo"></div>
+        <div><img src="arrows.png" alt="" class="img-arrow"></div>
+        <div class="road">
+            </div>
+        </div>
     </div>
+    
 
-    <div id="game-board">
-      <canvas id="canvas" width="500" height="700"></canvas>
-    </div>
-
-    <script type="text/javascript" src="js/index.js"></script>
-  </body>
+    <script src="index.js"></script>
+</body>
 </html>
